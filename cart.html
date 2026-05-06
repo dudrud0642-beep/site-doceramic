@@ -1,0 +1,396 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>쇼핑몰 포트폴리오</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper/swiper.js"></script> 
+<script src="js/ui.js"></script> 
+<script src="js/inc.js"></script> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="board.css">
+<link rel="stylesheet" type="text/css" href="inc.css">
+<link rel="stylesheet" type="text/css" href="style_response.css">
+<link rel="stylesheet" type="text/css" href="board_responsele.css">
+<link rel="stylesheet" type="text/css" href="js/swiper/swiper.css" />
+<link rel="stylesheet" type="text/css" href="xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="font.css">
+</head>
+
+<body>
+<div id="header">
+	<div class="headerIn">
+		<div class="mem_wrap">
+			<div class="box0">
+				<ul class="menu flex vc hr">
+					<li><a href="about.html" class="in vm_wrap"><i class="tt">회사소개</i></a></li>
+					<li class="down"><a href="notice.html" class="in vm_wrap"><i class="tt c_point2">고객센터</i><i class="xi arrow c_point2"></i></a>
+						<ul class="down_menu">
+							<li><a href="faq.html"><i class="tt">FAQ</i></a></li>
+							<li><a href="inquiry.html"><i class="tt">1:1문의하기</i></a></li>
+							<li><a href="notice.html"><i class="tt">공지사항</i></a></li>
+						</ul>
+					</li>
+                    <li class="down"><a href="mypage.html" class="in vm_wrap"><i class="tt">마이페이지</i><i class="xi arrow"></i></a>
+                        <ul class="down_menu">
+                            <li><a href="mypage.html"><i class="tt">나의 구매내역</i></a></li>
+                            <li><a href="modify.html"><i class="tt">나의 회원정보</i></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="in vm_wrap"><i class="tt">LOGOUT</i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top_wrap">
+			<div class="box0">
+				<div class="wrap_in flex wrap space vc">
+					<div class="etc_wrap flex mgR">
+						<div class="etc_menu flex vc">
+							<div class="all toggleWrap">
+								<a href="javascript:void(0);" class="link all_btn flex vc" onClick="toggleClass(this); toggleClass(this,'html,body','hidden')">
+                                	<div class="in"><i class="ham"></i></div><span class="tt">ALL CATEGORY</span>
+                                </a>
+								<div class="all_wrap">
+									<div class="wrap_bg" onClick="toggleClass(this); toggleClass(this,'html,body','hidden')"></div>
+									<div class="wrap_in flex ah">
+										<div id="nav" class="all_gnb">
+											<div class="inner flex col js_mouse_wheel">
+												<div class="all_logo"><img src="images/inc/logo.png" alt="logo" /></div>
+												<div class="all_gnb_wrap">
+                                                     <ul class="gnb flex">
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">스타일</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">모던</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">스톤</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">테라조</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">빈티지</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">공간별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">거실</span></a></li>
+                                                                <li class=""><a href="prod.html"><span class="tt">욕실</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">주방</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">현관</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">색상별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">화이트</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">그레이</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">블랙</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">유채색</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">사이즈별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">300</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">600</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">1200</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">박판</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">재질별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">무광</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">유광</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="lineSt menuNo menuNo2"><a href="" class="dp1 flex ac col"><span class="tt">입고예정상품 예약</span></a></li>
+                                                        <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">운임/양중금액</span></a></li>
+                                                        <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">이벤트</span></a></li>
+                                                    </ul>
+                                                </div>
+												<div class="all_banner">
+													<a href="javascript:void(0);" class="in bgfix resize s5" style="background-image:url()"></a>
+												</div>
+												<div class="all_gnb_wrap2">
+													<ul class="gnb flex">
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">신제품</span></a></li>
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">베스트제품</span></a></li>
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">고객센터</span></a></li>
+													</ul>
+												</div>
+												<div class="all_cs mgT">
+													<div class="cs">
+														<div class="tit">CS Center</div>
+														<div class="tt"><p class="t1"><a>02-1234-5678</a></p></div>
+														<div class="tt"><i class="t2">평일 10:00 - 18:00</i></div>
+                                                        <div class="tt"><i class="t2">점심시간: 12:00 - 13:00</i></div>
+                                                        <div class="tt"><i class="t2">(토 / 일 / 공휴일 휴무)</i></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="logo_wrap"><h1 class="logo flex"><a href="index.html" class="in"><img src="images/inc/logo.png" alt="" /></a><span class="in_txt">디오세라믹 대한민국 대표 타일 쇼핑몰</span></h1></div>
+					<div class="menuR menuR ar mgL">
+						<div class="inner flex vc">
+								<div class="search_wrap">
+									<div class="inn search_btn">
+										<input type="text"  class="input_st inSearch" placeholder="검색어를 입력하세요."><button type="button" class="btn"><i class="xi"></i></button>
+									</div>
+								</div>
+							<ul class="icon_menu flex vc">
+								<li class=""><a href="cart.html" class="in vm_wrap"><span class="vm"><i class="xi xi-market icon"></i><i class="no cart_no">3</i></span></a></li>
+                                <li class=""><a href="mypage.html" class="in vm_wrap"><span class="vm"><i class="xi xi-user-o icon"></i><i class="tt">마이페이지</i></span></a></li>
+								<li class="cs"><a href="javascript:void(0);" class="in vm_wrap"><span class="vm"><i class="xi xi-headset icon"></i></span></a>
+									<ul class="menu_list">
+										<li><a href="notice.html" class="in vm_wrap"><i class="ttt">공지사항</i></a></li>
+										<li><a href="inquiry.html" class="in vm_wrap"><i class="ttt">1:1문의</i></a></li>
+										<li><a href="faq.html" class="in vm_wrap"><i class="ttt">FAQ</i></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu_wrap">
+        	<div class="box2 gnb_menu">
+            	<ul class="gnb flex">
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">신제품</span></a></li>
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">베스트제품</span></a></li>
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">외장타일</span></a></li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">스타일</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">모던</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">스톤</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">테라조</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">빈티지</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">공간별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">거실</span></a></li>
+                            <li class=""><a href="prod.html"><span class="tt">욕실</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">주방</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">현관</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">색상별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">화이트</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">그레이</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">블랙</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">유채색</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">사이즈별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">300</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">600</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">1200</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">박판</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">재질별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">무광</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">유광</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lineSt menuNo menuNo2"><a href="" class="dp1 flex ac col"><span class="tt">입고예정상품 예약</span></a></li>
+                    <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">운임/양중금액</span></a></li>
+                    <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">이벤트</span></a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+</div>
+<!--header end-->
+
+<!--quick end-->
+<div id="quick">
+	<div class="quickWrap flex vb">
+		<ul class="menu">
+            <li class="def"><a href="mypage.html" class="in"><i class="xi xi-profile-o"></i><i class="tt">마이페이지</i></a></li>
+            <li class="def"><a href="join.html" class="in"><i class="xi xi-user-plus-o"></i><i class="tt">간편 회원가입</i></a></li>
+			<li class="def"><a href="inquiry.html" class="in"><i class="xi xi-message-o"></i><i class="tt">1:1 문의</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-kakaotalk kakao"></i><i class="tt">카카오톡 문의</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-shop"></i><i class="tt">방문상담 예약</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-border-color"></i><i class="tt">견적문의</i></a></li>
+			<li class="top"><a href="javascript:void(0);" class="in" onClick="goTop()"><div><i class="xi xi-angle-up"></i><i class="tt">TOP</i></div></a></li>
+		</ul>
+	</div>
+</div>
+<!--quick end-->
+
+<!---->
+
+<div class="box3 page_sec7">
+    <div class="page_tit_wrap">
+      <div class="page_titw"><p class="tt t1"><i class="vm">장바구니 담은상품</i> <i class="c_point vm">1</i></p></div>
+    </div>
+
+    <ul class="flex_table">
+      <li>
+        <div class="tr flex">
+          <div class="td flex vc wCheck">
+            <label class="label_st s1"><input type="checkbox" /><i class="xi"></i></label>
+          </div>
+          <div class="td flex hc wCon">
+            <div class="imgCon flex vc">
+              <div class="wrap_img"><div class="resize bgfix" style="background-image:url(images/sian/prod_img05_hov.jpg)"></div></div>
+              <div class="wrap_con grow">
+                <p class="linkCur" onclick="location.href='view.html'">
+                  <span class="t1 biGst">PASSEPARTOUT BIANCO</span>
+                  <span class="t2 biGst">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</span>
+                  <span class="t3 biGst">색상 : 아이보리 / 크기 : 600x1000 (+15,500원)</span>
+                  <span class="t3 biGst">시공위치 : 욕실(바닥)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="td flex vc hc wVol2">
+            <div class="vol_st st2 flex vc">
+              <button type="button" class="btn down"><i class="xi"></i></button>
+              <input type="text" class="inp" value="1" />
+              <button type="button" class="btn up"><i class="xi"></i></button>
+            </div>
+          </div>
+          <div class="td flex vc hc wPrice2">
+            <div class="ac">
+              <p class="tt_price per s1"><i class="tn">10%</i><i class="xi"></i><i class="tw c_point">할인</i></p>
+              <span class="tt_price before page_sec0"><i class="tn">00,000</i><i class="tw">원</i></span>
+              <p class="tt_price page_sec0"><i class="tn s2">00,000</i><i class="tw">원</i></p>
+              <p class="tt_price page_sec0"><i class="tn s2">3.3</i><i class="tw">T</i></p>
+            </div>
+          </div>
+          <div class="td flex vc hc wBtn2">
+            <input type="button" class="input_st c10 wdBtn1" value="바로구매" onclick="location.href='order.html'" />
+            <div class="flex">
+              <a href="javascript:void(0)" class="pd05"><i class="xi xi-heart-o"></i></a>
+              <a href="javascript:void(0)" class="pd05"><i class="xi xi-trash-o"></i></a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="mall_total_wrap flex hr wrap vc">
+      <p class="tt_price"><i class="tw mr">상품가격</i><i class="tn s3">000,000</i><i class="tw">원</i><i class="tw mr ml mark">+</i></p>
+      <p class="tt_price"><i class="tw mr">배송비</i><i class="tn s3">000,000</i><i class="tw">원</i><i class="tw mr ml mark">=</i></p>
+      <p class="tt_price"><i class="tw mr">결제금액</i><i class="tn s2 c_point">000,000</i><i class="tw">원</i></p>
+    </div>
+    <div class="board_btn_wrap al page_sec1">
+      <button type="button" class="input_st c9 re s2">전체선택</button>
+      <button type="button" class="input_st c9 s2">삭제</button>
+    </div>
+    <div class="board_btn_wrap">
+      <button type="button" class="input_st c10 s1 w1" onclick="location.href='order.html'">상품주문 <i class="xi xi-angle-right-min"></i></button>
+      <button type="button" class="input_st c9 s1" onclick="location.href='prod.html'">계속쇼핑</button>
+    </div>
+  </div>
+
+
+
+<!---->
+
+<!--footer-->
+<div id="footer">
+	<div class="info_wrap">
+		<div class="box0">
+			<ul class="con_wrap flex wrap vc">
+				<li class="f1">
+					<div class="inner">
+						<div class="logo"><div class="in"><img src="images/sian/logo_mark.png" alt="" /></div></div>
+						<ul class="info flex wrap">
+							<li><span class="tt">디오세라믹</span></li>
+							<li><span class="tt">대표. 이영경</span></li>
+							<li class="br"></li>
+							<li><span class="tt">매장주소. 서울특별시 강남구 테헤란로 427, 위워크 타워 12층</span></li>
+							<li class="br"></li>
+							<li><span class="tt">창고주소. 경기도 성남시 분당구 판교역로 166, 카카오판교오피스 7층</span></li>
+							<li class="br"></li>
+							<li><span class="tt">사업자등록번호. 123-45-67890</span></li>
+							<li><span class="tt">통신판매신고번호. 123-45-67890</span></li>
+							<li class="br"></li>
+							<li><span class="tt">개인정보관리책임자. 홍길동</span></li>
+						</ul>
+						<div class="copyright"><span class="tt">COPYRIGHT (C) Dio Ceramic. ALL RIGHTS RESERVED.</span></div>
+					</div>
+				</li>
+				<li class="cs f2">
+					<div class="inner">
+						<div class="tit"><b class="tt">CS Center</b></div>
+						<div class="con">
+							<div class="company"><strong class="tt">02-1234-5678</strong></div>
+							<div class="tel"><strong class="tt">평일 10:00 - 18:00</strong></div>
+							<div class="time">
+								<p class="tt">점심시간: 12:00 - 13:00
+								<p class="tt">(토 / 일 / 공휴일 휴무)</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="cs f4">
+					<div class="inner">
+						<div class="main_more flex small st1 wrap">
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">카카오톡 문의</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="quinry.html" class="more_in"><i class="tt">1:1 문의</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">배송안내</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">환불정책</i><i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div>
+				</li>
+				<li class="cs f3">
+					<div class="inner">
+						<div class="tit"><b class="tt">Bank Account</b></div>
+						<div class="con">
+							<div class="bank">
+								<p class="t1">하나은행</p>
+								<p class="t2"><strong>123456-01-123456</strong></p>
+								<p class="t3">예금주. 이영경</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="menu_wrap">
+		<div class="box0">
+			<div class="wrap_in flex vc space">
+				<ul class="menu flex wrap">
+					<li><a href="about.html" class="in" ><span class="tt">회사소개</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">견적문의</span></a></li>
+					<li><a href="javascript:void(0);" class="in c_point"><span class="tt">개인정보처리방침</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">이용약관</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">배송/교환/환불정보</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">이메일무단수집거부</span></a></li>
+					<li><a href="notice.html" class="in"><span class="tt">고객센터</span></a></li>
+				</ul>
+				<ul class="sns flex wrap">
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-shop"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-instagram"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-naver"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-youtube-play"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer end-->
+
+
+</body>
+</html>
+
+</body>
+</html>

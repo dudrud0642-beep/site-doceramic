@@ -1,0 +1,1133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>쇼핑몰 포트폴리오</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper/swiper.js"></script> 
+<script src="js/ui.js"></script> 
+<script src="js/inc.js"></script> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="board.css">
+<link rel="stylesheet" type="text/css" href="inc.css">
+<link rel="stylesheet" type="text/css" href="style_response.css">
+<link rel="stylesheet" type="text/css" href="board_responsele.css">
+<link rel="stylesheet" type="text/css" href="js/swiper/swiper.css" />
+<link rel="stylesheet" type="text/css" href="xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="font.css">
+</head>
+
+<body>
+<div id="header">
+	<div class="headerIn">
+		<div class="mem_wrap">
+			<div class="box0">
+				<ul class="menu flex vc hr">
+					<li><a href="about.html" class="in vm_wrap"><i class="tt">회사소개</i></a></li>
+					<li class="down"><a href="notice.html" class="in vm_wrap"><i class="tt c_point2">고객센터</i><i class="xi arrow c_point2"></i></a>
+						<ul class="down_menu">
+							<li><a href="faq.html"><i class="tt">FAQ</i></a></li>
+							<li><a href="inquiry.html"><i class="tt">1:1문의하기</i></a></li>
+							<li><a href="notice.html"><i class="tt">공지사항</i></a></li>
+						</ul>
+					</li>
+                    <li class="down"><a href="mypage.html" class="in vm_wrap"><i class="tt">마이페이지</i><i class="xi arrow"></i></a>
+                        <ul class="down_menu">
+                            <li><a href="mypage.html"><i class="tt">나의 구매내역</i></a></li>
+                            <li><a href="modify.html"><i class="tt">나의 회원정보</i></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="in vm_wrap"><i class="tt">LOGOUT</i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top_wrap">
+			<div class="box0">
+				<div class="wrap_in flex wrap space vc">
+					<div class="etc_wrap flex mgR">
+						<div class="etc_menu flex vc">
+							<div class="all toggleWrap">
+								<a href="javascript:void(0);" class="link all_btn flex vc" onClick="toggleClass(this); toggleClass(this,'html,body','hidden')">
+                                	<div class="in"><i class="ham"></i></div><span class="tt">ALL CATEGORY</span>
+                                </a>
+								<div class="all_wrap">
+									<div class="wrap_bg" onClick="toggleClass(this); toggleClass(this,'html,body','hidden')"></div>
+									<div class="wrap_in flex ah">
+										<div id="nav" class="all_gnb">
+											<div class="inner flex col js_mouse_wheel">
+												<div class="all_logo"><img src="images/inc/logo.png" alt="logo" /></div>
+												<div class="all_gnb_wrap">
+                                                     <ul class="gnb flex">
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">스타일</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">모던</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">스톤</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">테라조</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">빈티지</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">공간별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">거실</span></a></li>
+                                                                <li class=""><a href="prod.html"><span class="tt">욕실</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">주방</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">현관</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">색상별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">화이트</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">그레이</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">블랙</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">유채색</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">사이즈별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">300</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">600</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">1200</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">박판</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">재질별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">무광</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">유광</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="lineSt menuNo menuNo2"><a href="" class="dp1 flex ac col"><span class="tt">입고예정상품 예약</span></a></li>
+                                                        <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">운임/양중금액</span></a></li>
+                                                        <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">이벤트</span></a></li>
+                                                    </ul>
+                                                </div>
+												<div class="all_banner">
+													<a href="javascript:void(0);" class="in bgfix resize s5" style="background-image:url()"></a>
+												</div>
+												<div class="all_gnb_wrap2">
+													<ul class="gnb flex">
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">신제품</span></a></li>
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">베스트제품</span></a></li>
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">고객센터</span></a></li>
+													</ul>
+												</div>
+												<div class="all_cs mgT">
+													<div class="cs">
+														<div class="tit">CS Center</div>
+														<div class="tt"><p class="t1"><a>02-1234-5678</a></p></div>
+														<div class="tt"><i class="t2">평일 10:00 - 18:00</i></div>
+                                                        <div class="tt"><i class="t2">점심시간: 12:00 - 13:00</i></div>
+                                                        <div class="tt"><i class="t2">(토 / 일 / 공휴일 휴무)</i></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="logo_wrap"><h1 class="logo flex"><a href="index.html" class="in"><img src="images/inc/logo.png" alt="" /></a><span class="in_txt">디오세라믹 대한민국 대표 타일 쇼핑몰</span></h1></div>
+					<div class="menuR menuR ar mgL">
+						<div class="inner flex vc">
+								<div class="search_wrap">
+									<div class="inn search_btn">
+										<input type="text"  class="input_st inSearch" placeholder="검색어를 입력하세요."><button type="button" class="btn"><i class="xi"></i></button>
+									</div>
+								</div>
+							<ul class="icon_menu flex vc">
+								<li class=""><a href="cart.html" class="in vm_wrap"><span class="vm"><i class="xi xi-market icon"></i><i class="no cart_no">3</i></span></a></li>
+                                <li class=""><a href="mypage.html" class="in vm_wrap"><span class="vm"><i class="xi xi-user-o icon"></i><i class="tt">마이페이지</i></span></a></li>
+								<li class="cs"><a href="javascript:void(0);" class="in vm_wrap"><span class="vm"><i class="xi xi-headset icon"></i></span></a>
+									<ul class="menu_list">
+										<li><a href="notice.html" class="in vm_wrap"><i class="ttt">공지사항</i></a></li>
+										<li><a href="inquiry.html" class="in vm_wrap"><i class="ttt">1:1문의</i></a></li>
+										<li><a href="faq.html" class="in vm_wrap"><i class="ttt">FAQ</i></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu_wrap">
+        	<div class="box2 gnb_menu">
+            	<ul class="gnb flex">
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">신제품</span></a></li>
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">베스트제품</span></a></li>
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">외장타일</span></a></li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">스타일</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">모던</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">스톤</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">테라조</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">빈티지</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">공간별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">거실</span></a></li>
+                            <li class=""><a href="prod.html"><span class="tt">욕실</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">주방</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">현관</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">색상별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">화이트</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">그레이</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">블랙</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">유채색</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">사이즈별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">300</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">600</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">1200</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">박판</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">재질별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">무광</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">유광</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lineSt menuNo menuNo2"><a href="" class="dp1 flex ac col"><span class="tt">입고예정상품 예약</span></a></li>
+                    <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">운임/양중금액</span></a></li>
+                    <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">이벤트</span></a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+</div>
+<!--header end-->
+
+<!--quick end-->
+<div id="quick">
+	<div class="quickWrap flex vb">
+		<ul class="menu">
+            <li class="def"><a href="mypage.html" class="in"><i class="xi xi-profile-o"></i><i class="tt">마이페이지</i></a></li>
+            <li class="def"><a href="join.html" class="in"><i class="xi xi-user-plus-o"></i><i class="tt">간편 회원가입</i></a></li>
+			<li class="def"><a href="inquiry.html" class="in"><i class="xi xi-message-o"></i><i class="tt">1:1 문의</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-kakaotalk kakao"></i><i class="tt">카카오톡 문의</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-shop"></i><i class="tt">방문상담 예약</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-border-color"></i><i class="tt">견적문의</i></a></li>
+			<li class="top"><a href="javascript:void(0);" class="in" onClick="goTop()"><div><i class="xi xi-angle-up"></i><i class="tt">TOP</i></div></a></li>
+		</ul>
+	</div>
+</div>
+<!--quick end-->
+
+
+<!---->
+<div class="box3 page_sec7">
+    	<div class="mall_order_wrap linkScroll">
+        	<div class="mall_order_con">
+                <div class="board_tit mb"><i class="t1 vBase">주문상품</i> <i class="t1 ffGS c_point vBase">(0)</i></div>
+                <ul class="flex_table reviewSt">
+                    <li>
+                        <div class="tr p1 flex">
+                            <div class="td flex wCon">
+                                <div class="imgCon flex vc">
+                                    <div class="wrap_img w3"><div class="resize bgfix" style="background-image:url(images/sian/prod_img05_hov.jpg)"></div></div>
+                                    <div class="wrap_con grow">
+                                        <p class="linkCur" onclick="location.href='view.html'">
+											<span class="t1">PASSEPARTOUT BIANCO</span>
+											<span class="t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</span>
+											<span class="t3">색상 : 아이보리 / 크기 : 600x1000 (+15,500원)</span>
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="td flex vc hc wVol">
+                                <p class="tt_price ac"><i class="tn s1">1BOX</i><i class="tw db c_gray page_sec0">(1.55m<sup>2</sup>)</i></p>
+                            </div>
+                            <div class="td flex vc hc wDis">
+                                <p class="tt_price before"><i class="tn s1">5,000 원</i></p>
+                            </div>
+                            <div class="td flex vc hc wPrice">
+                                <p class="tt_price"><i class="tn s2">66,500</i><i class="tw">원</i></p>
+                            </div>
+							<div class="td flex vc hc wPrice3">
+                                <p class="tt_price"><i class="tn s2">3.3</i><i class="tw">T</i></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="form_st st1 page_sec">
+                    <li>
+                        <div class="in_tit s1">비회원 주문약관 동의</div>
+                        <ul class="agree">
+                            <li class="all">
+                                <label class="label_st s4">
+                                    <input class="all_check" type="checkbox" /><i class="xi"></i><span class=""><?=$site_name?> 이용약관 및 개인정보처리방침에 모두 동의합니다.</span>
+                                </label>
+                            </li>
+                            <li>
+                                <div class="flex wrap vc toggleWrap">
+                                    <label class="label_st s4">
+                                        <input type="checkbox" class="ag_check" /><i class="xi"></i><span>이용약관에 동의</span> <span class="c_point">(필수)</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex wrap vc toggleWrap">
+                                    <label class="label_st s4">
+                                        <input type="checkbox" class="ag_check" /><i class="xi"></i><span>개인정보처리방침에 동의</span> <span class="c_point">(필수)</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="board_tit mb page_sec"><i class="t1 vBase">주문자정보</i></div>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write">
+					<col class="w_form_tit" />
+					<col class="w_form" />
+					<tr>
+						<th class=""><i class="">구매자</i> <i class="xi ess"></i></th>
+						<td><input type="text" class="input_st w1" /></td>
+					</tr>
+					<tr>
+						<th class="　"><i class="">이메일</i> <i class="xi ess"></i></th>
+						<td>
+							<div class="mail_group">
+								<input type="text" class="input_st w1">
+								<span class="input_sec">@</span>
+								<input type="text" class="input_st w1">
+								<label class="label_select">
+									<select class="input_st w1">
+										<option value="">직접입력</option>
+										<option value="naver.com">네이버</option>
+										<option value="gmail.com">지메일</option>
+										<option value="nate.com">네이트</option>
+										<option value="Korea.com">Korea</option>
+										<option value="hanafos.com">하나포스</option>
+										<option value="dreamwiz.com">드림위즈</option>
+										<option value="msn.com">MSN</option>
+										<option value="netian.com">네띠앙</option>
+										<option value="yahoo.co.kr">야후</option>
+										<option value="empas.com">엠파스</option>
+										<option value="chol.com">천리안</option>
+										<option value="hotmail.com">핫메일</option>
+										<option value="hanmail.net">한메일</option>
+									</select>
+								</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class=""><i class="">연락처</i> <i class="xi ess"></i></th>
+						<td>
+							<div class="tel_group">
+								<label class="label_select">
+									<select class="input_st w2">
+										<option>010</option>
+									</select>
+								</label>
+								<span class="input_sec">-</span>
+								<input type="text" class="input_st w2" />
+								<span class="input_sec">-</span>
+								<input type="text" class="input_st w2" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class=""><i class="">배송지 주소</i> <i class="xi ess"></i></th>
+						<td>
+							<div class="input_wrap">
+								<input type="text" class="input_st w2" readonly />
+								<span class="input_sec w1"></span>
+								<button type="button" class="input_st c9">우편번호찾기</button>
+								<span class="input_row"></span>
+								<input type="text" class="input_st w100" readonly />
+								<span class="input_row"></span>
+								<input type="text" class="input_st w100" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="　"><i class="">배송지 정보</i> <i class="xi ess"></i></th>
+						<td>
+							<ul class="label_wrap flex wrap vc">
+								<li><label class="label_st de"><input type="radio"><i class="xi"></i><span><strong>기본 배송지</strong></span></label></li>
+								<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>최근 배송지</strong></span></label></li>
+								<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>직접 입력</strong></span></label></li>
+								<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>주문자정보와 동일</strong></span></label></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th class=""><i class="">수령인</i> <i class="xi ess"></i></th>
+						<td><input type="text" class="input_st w1" /></td>
+					</tr>
+					<tr>
+						<th class=""><i class="">배송지 주소</i> <i class="xi ess"></i></th>
+						<td>
+							<div class="input_wrap">
+								<input type="text" class="input_st w2" readonly />
+								<span class="input_sec w1"></span>
+								<button type="button" class="input_st c9">우편번호찾기</button>
+								<span class="input_row"></span>
+								<input type="text" class="input_st w100" readonly />
+								<span class="input_row"></span>
+								<input type="text" class="input_st w100" />
+							</div>
+						</td>
+					</tr>
+				</table>
+
+                <div class="board_tit noline page_sec"><i class="t1 mr20">배송정보</i> <label class="label_st s4"><input type="checkbox" /><i class="xi"></i><span>주문자정보와 동일</span></label></div>
+				<div class="page_titw"><p class="tt t2 c_point">고객님의 원활한 제품수령과 시공을 위해 <span class="orderBtn_Box"><i class="tt">안내사항 확인하기</i><i class="xi xi-angle-down-min"></i></span> 를 부탁드립니다.</p></div>
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write fs17 page_sec2">
+					<tbody>
+						<tr>
+							<td class="ac">
+								<ul class="label_wrap flex wrap vc hc">
+									<li><label class="label_st de"><input type="radio" onclick="labelShow(this,'0')"><i class="xi"></i><span><strong>차량발송(착불)</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio" onclick="labelShow(this,'1')"><i class="xi"></i><span><strong>화물택배(착불)</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio" onclick="labelShow(this,'2')"><i class="xi"></i><span><strong>샘플칩 배송(무료)</strong></span></label></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="labelShow" data-no="0">
+					<div class="orderCheck_tw toggleWrap">
+						<div class="flex vc wrap tiw pb0">
+							<p class="tit"><i class="t1">차량발송(착불) 확인사항</i></p>
+							<a href="javascript:void(0)" class="more" onclick="toggleClass(this)"><i class="icon"></i></a>
+						</div>
+						<div class="check_tw">
+							<ul class="page_memo pd0">
+								<li class="t1 flex"><i class="xi icon info"></i><p class="tt">예정된 배송일정에 받아야 하는 경우, <i class="c_point vb">사전 구매 후 예약 발송 요청</i>해 주세요.</p></li>
+								<li class="t1 flex"><i class="xi icon info"></i><p class="tt">배송은 <i class="c_point vb">차량으로 진입 가능한 곳</i>까지 배송됩니다.</p></li>
+								<li class="t1 flex">
+									<i class="xi icon info"></i>
+									<p class="tt">
+										<i class="c_point vb">하차 및 양중은 하단 두가지 방법</i>으로 진행됩니다.
+										<i class="in_tt">*셀프 : 직접 하차 및 양중을 해주셔야 합니다.(비용없음)</i>
+										<i class="in_tt">*양중서비스 : 양중서비스를 신청해주세요.(비용발생)</i>
+									</p>
+								</li>
+								<li class="t1 flex"><i class="xi icon info"></i><p class="tt">안전한 배송을 위한, 빠렛트, 비닐, 밴딩끈, 박스는 <i class="c_point vb">현장에서 폐기</i>해주세요.</p></li>
+								<li class="t1 flex">
+									<i class="xi icon info"></i>
+									<p class="tt">
+										요청하신 배송일에 <i class="c_point vb">고객님 사정으로 인해 수령하지 못할 경우 추가 비용이 발생</i>합니다.
+										<i class="in_tt">* 상품준비중 상태에서 주문취소 요청</i>
+										<i class="in_tt">* 주소지 오기입으로 인한 배송지 변경</i>
+										<i class="in_tt">* 배송당일 기입된 연락처로 통화불능 상태</i>
+										<i class="in_tt">* 셀프하차 및 양중계획 미수립으로 인한 지연</i>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write lineSt">
+						<col class="w_form_tit" />
+						<col class="w_form" />
+						<tr>
+							<th class=""><i class="">연락처</i> <i class="xi ess"></i></th>
+							<td>
+								<div class="tel_group">
+									<label class="label_select">
+										<select class="input_st w2">
+											<option>010</option>
+										</select>
+									</label>
+									<span class="input_sec">-</span>
+									<input type="text" class="input_st w2" />
+									<span class="input_sec">-</span>
+									<input type="text" class="input_st w2" />
+								</div>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">연락이 가능한 연락처를 2개 모두 기입</i>해주세요.</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">희망 수령 날짜에 연락이 불가한 경우<i class="c_point vb">추가비용이 발생</i> 될 수 있습니다.</p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">배송 날짜</i> <i class="xi ess"></i></th>
+							<td>
+								<input type="text" class="input_st w1" placeholder="예) 2022-00-00"/>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">시공예정일 <i class="c_point vb">최소 2일전으로 기입하여 주문</i>해 주세요.<br />(시공당일 수령시 적절한 대응이 불가할 수 있습니다.)</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">단일품목은</i> 오전 주문시 차량 <i class="c_point vb">당일발송</i>이 가능합니다.</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">배송 및 수급이 불가한 경우, 유선상으로 안내해드립니다.</i></p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">배송 시간</i> <i class="xi ess"></i></th>
+							<td>
+								<input type="text" class="input_st w1" placeholder="예) 16:00"/>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">24시 기준</i>으로 <i class="c_point vb">시간을 작성</i>해주세요.<br />
+											지방에 경우 합짐(합차)차량 특성상 오전중 하차만 가능합니다.(오전8-12시)</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">시간에 맞춰 배송지에 수령인이 계셔야 합니다.</i></p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">기상 또는 도로상황으로 인해 <i class="c_point vb">지연 발생이 가능</i>합니다.<br />(해당 상황에 경우 담당 배송기사님이 사전 연락 진행)</p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class="">전달사항</th>
+							<td><textarea class="input_st h2" placeholder="확인이 필요한 사항을 남겨주시면, 출고담당자가 확인 후 사전 연락드립니다.(지하주차장 높이 제판, 현장 특이사항 등)"></textarea></td>
+						</tr>
+						<tr>
+							<th class=""><i class="">현장 하차 위치</i> <i class="xi ess"></i></th>
+							<td>
+								<ul class="label_wrap st1 flex wrap vc">
+									<li><label class="label_st de"><input type="radio"><i class="xi"></i><span><strong>지상</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>지하</strong></span></label></li>
+								</ul>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">일반적인 아파트, 빌라, 전원주택</i> 현장은 <i class="c_point vb">지상</i> 체크</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">지상에 차가 없는 공원형 아파트</i>인 경우 <i class="c_point vb">지하</i> 체크</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">공원형 아파트도 지상하차가 가능</i>한 경우 <i class="c_point vb">지상</i> 체크<br />(지하 주차장 높이 제한은 확인사항에 작성해주세요.)</p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">양중서비스</i> <i class="xi ess"></i></th>
+							<td>
+								<ul class="label_wrap st1 flex wrap vc">
+									<li><label class="label_st de"><input type="radio"><i class="xi"></i><span><strong>미신청</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>신청</strong></span></label></li>
+								</ul>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><p class="tt"><i class="c_point vb">※ 모든 조건 충족 시</i></p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">신청불가(미신청)</i> - 하차 및 양중 인력있음, 입구 앞 주차 불가, 대차(구르마)사용 불가, 엘레베이터 없음, 대량물량인 현장</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">신청가능(신청)</i> - 하차 및 양중 인력없음, 입구 앞 주차 가능, 대차(구르마)사용가능, 엘레베이터 있음, 2톤 이내 물량</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">신청이 불가한 조건인 경우 고객센터 연락 시 양중전문업체를 연결해드립니다.(수도권만 가능)</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">양중비용</i> - 양중 서비스는 <i class="c_point vb">1톤 기준 80,000원</i>이 부과됩니다.<br />예시)총무게 1.2톤(1200KG) X 80,000원 = 96,000원</p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">추가주문확인</i> <i class="xi ess"></i></th>
+							<td>
+								<ul class="label_wrap st1 flex wrap vc">
+									<li><label class="label_st de"><input type="radio"><i class="xi"></i><span><strong>아니오</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>예</strong></span></label></li>
+								</ul>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">아니오</i> - 새로운 현장에 신규주문인 경우</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">예</i> - 새로운 현장에 신규주문인 경우</p></li>
+											<li class="t1 flex"><p class="tt">※같은 제품도 <i class="c_point vb">생산일자에 따른 사이즈, 컬러에 미세한 차이가 발생</i>합니다.<br /> <i class="c_point vb">동일한 현장에 같은제품 추가시 체크</i>해주셔야
+											<i class="c_point vb">동일한 생산일자로 발송</i> 됩니다.</p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="labelShow" data-no="1" style="display:none">
+					<div class="orderCheck_tw toggleWrap">
+						<div class="flex vc wrap tiw pb0">
+							<p class="tit"><i class="t1">화물택배 확인사항</i></p>
+							<a href="javascript:void(0)" class="more" onclick="toggleClass(this)"><i class="icon"></i></a>
+						</div>
+						<div class="check_tw">
+							<ul class="page_memo pd0">
+								<li class="t1 flex"><i class="xi icon info"></i><p class="tt">제품 수령은 가까운 <i class="c_point vb">경동택배 영업소에서 직접 수령</i> 해주셔야 합니다.</p></li>
+								<li class="t1 flex"><i class="xi icon info"></i><p class="tt">택배 출고 시 파손위험으로 인해 <i class="c_point vb">로스율을 충분하게 적용</i>하시는걸 권장드립니다.</p></li>
+								<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">운임은 표준운임표 내에서</i> 지역별, 무게별, 영업소별로 <i class="c_point vb">다소 편차가 있습니다.</i></p></li>
+								<li class="t1 flex"><i class="xi icon info"></i><p class="tt">영업소에서 <i class="c_point vb">운임 외 별도 하차비가 발생</i> 합니다. (운임기준 약 <i class="c_point vb">15~20%</i>)</p></li>
+								<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">도서지역에 경우</i> 기존 정기화물 금액에 <i class="c_point vb">2배 정도의 운임이 발생</i>합니다.</p></li>
+								<li class="t1 flex">
+									<i class="xi icon info"></i>
+									<p class="tt">
+										요청하신 배송일에 <i class="c_point vb">고객님 사정으로 인해 수령하지 못할 경우 추가 비용이 발생</i>합니다.
+										<i class="in_tt">* 상품준비중 상태에서 배송일 변경</i>
+										<i class="in_tt">* 상품준비중 상태에서 주문취소 요청</i>
+										<i class="in_tt">* 영업소명 오기입으로 인한 배송지 변경</i>
+										<i class="in_tt">* 수령일 당일 제품을 찾아가지 않는 경우</i>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write lineSt">
+						<col class="w_form_tit" />
+						<col class="w_form" />
+						<tr>
+							<th class=""><i class="">배송지 정보</i> <i class="xi ess"></i></th>
+							<td>
+								<ul class="label_wrap flex wrap vc">
+									<li><label class="label_st de"><input type="radio"><i class="xi"></i><span><strong>기본 배송지</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>최근 배송지</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>직접 입력</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>주문자정보와 동일</strong></span></label></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">받으실 분</i> <i class="xi ess"></i></th>
+							<td><input type="text" class="input_st w1" /></td>
+						</tr>
+						<tr>
+							<th class=""><i class="">받으실 영업소</i> <i class="xi ess"></i></th>
+							<td>
+								<div class="input_wrap">
+									<input type="text" class="input_st w2" readonly />
+									<span class="input_sec w1"></span>
+									<button type="button" class="input_st c9">우편번호찾기</button>
+									<span class="input_row"></span>
+									<input type="text" class="input_st w100" readonly />
+									<span class="input_row"></span>
+									<input type="text" class="input_st w100" />
+								</div>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">가까운 경동택배 <i class="c_point vb">영업소에서 직접 설정</i> 해주세요.(지역 영업소 찾기)</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">예상 택배운임은 <i class="c_point vb">링크하단 무게기준 정기화물 금액을 참고</i>해 주세요.(예상 운임 확인)</p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">연락처</i> <i class="xi ess"></i></th>
+							<td>
+								<div class="tel_group">
+									<label class="label_select">
+										<select class="input_st w2">
+											<option>010</option>
+										</select>
+									</label>
+									<span class="input_sec">-</span>
+									<input type="text" class="input_st w2" />
+									<span class="input_sec">-</span>
+									<input type="text" class="input_st w2" />
+								</div>
+								<div class="tel_group page_sec0">
+									<label class="label_select">
+										<select class="input_st w2">
+											<option>010</option>
+										</select>
+									</label>
+									<span class="input_sec">-</span>
+									<input type="text" class="input_st w2" />
+									<span class="input_sec">-</span>
+									<input type="text" class="input_st w2" />
+								</div>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">연락이 가능한 연락처를 2개 모두 기입</i>해주세요.</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">지정 영업소에서 <i class="c_point vb">제품 입고시 해당 연락처로 안내</i>드리고 있습니다.</p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">배송 날짜</i> <i class="xi ess"></i></th>
+							<td>
+								<input type="text" class="input_st w1" placeholder="예) 2022-00-00"/>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">시공예정일 <i class="c_point vb">최소 2일전으로 기입하여 주문</i>해 주세요.<br />(시공당일 수령시 적절한 대응이 불가할 수 있습니다.)</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">단일품목은</i> 오전 주문시 차량 <i class="c_point vb">당일발송</i>이 가능합니다.</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt">일반적으로 지정배송일 오전에 지정영업소에서 수령 가능합니다.</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">배송 및 수급이 불가한 경우, 유선상으로 안내해드립니다.</i></p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class="">전달사항</th>
+							<td><textarea class="input_st h2" placeholder="확인이 필요한 사항을 남겨주시면, 출고담당자가 확인 후 사전 연락드립니다."></textarea></td>
+						</tr>
+						<tr>
+							<th class=""><i class="">추가주문확인</i> <i class="xi ess"></i></th>
+							<td>
+								<ul class="label_wrap st1 flex wrap vc">
+									<li><label class="label_st de"><input type="radio"><i class="xi"></i><span><strong>아니오</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>예</strong></span></label></li>
+								</ul>
+								<div class="orderCheck_tw bgno st1 toggleWrap">
+									<div class="tiw pb0">
+										<a href="javascript:void(0)" class="more ml0" onclick="toggleClass(this)"><i class="icon"></i></a>
+									</div>
+									<div class="check_tw">
+										<ul class="page_memo">
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">아니오</i> - 새로운 현장에 신규주문인 경우</p></li>
+											<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">예</i> - 새로운 현장에 신규주문인 경우</p></li>
+											<li class="t1 flex"><p class="tt">※같은 제품도 <i class="c_point vb">생산일자에 따른 사이즈, 컬러에 미세한 차이가 발생</i>합니다.<br /> <i class="c_point vb">동일한 현장에 같은제품 추가시 체크</i>해주셔야
+											<i class="c_point vb">동일한 생산일자로 발송</i> 됩니다.</p></li>
+										</ul>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="labelShow" data-no="2" style="display:none">
+					<ul class="page_memo page_sec1 page_secB1">
+						<li class="t1 flex"><p class="ti">샘플칩 배송 확인사항</p></li>
+						<li class="t1 flex"><i class="xi icon info"></i><p class="tt">샘플칩은 <i class="c_point vb">5개까지 선택 가능</i>합니다.</p></li>
+						<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">배송비는 무료</i>이며, 구매확정 후 <i class="c_point vb">10,000원 할인쿠폰이 지급</i>됩니다.</p></li>
+						<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">원장 샘플 요청은 차량 발송</i>만 가능하며, 고객센터로 문의 바랍니다.(차량운임발생)</p></li>
+						<li class="t1 flex"><i class="xi icon info"></i><p class="tt"><i class="c_point vb">제품 수급 및 샘플 칩 소진으로 인해 제품 발송이 어려운 경우 사전 연락드립니다.</i></p></li>
+					</ul>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write lineSt">
+						<col class="w_form_tit" />
+						<col class="w_form" />
+						<tr>
+							<th class=""><i class="">배송지 정보</i> <i class="xi ess"></i></th>
+							<td>
+								<ul class="label_wrap flex wrap vc">
+									<li><label class="label_st de"><input type="radio"><i class="xi"></i><span><strong>기본 배송지</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>최근 배송지</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>직접 입력</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>주문자정보와 동일</strong></span></label></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">받으실 분</i> <i class="xi ess"></i></th>
+							<td><input type="text" class="input_st w1" /></td>
+						</tr>
+						<tr>
+							<th class="　"><i class="">받으실 곳</i> <i class="xi ess"></i></th>
+							<td>
+								<div class="input_wrap">
+									<input type="text" class="input_st w2" readonly />
+									<span class="input_sec w1"></span>
+									<button type="button" class="input_st c9">우편번호찾기</button>
+									<span class="input_row"></span>
+									<input type="text" class="input_st w100" readonly />
+									<span class="input_row"></span>
+									<input type="text" class="input_st w100" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class=""><i class="">휴대폰</i> <i class="xi ess"></i></th>
+							<td>
+								<div class="tel_group">
+									<label class="label_select">
+										<select class="input_st w2">
+											<option>010</option>
+										</select>
+									</label>
+									<span class="input_sec">-</span>
+									<input type="text" class="input_st w2" />
+									<span class="input_sec">-</span>
+									<input type="text" class="input_st w2" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th class="">남기실 말씀</th>
+							<td><textarea class="input_st h2"></textarea></td>
+						</tr>
+					</table>
+				</div>
+
+                <div class="board_tit mb page_sec"><i class="t1 mr20">결제/할인 정보</i></div>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write">
+					<col class="w_form_tit" />
+					<col class="w_form" />
+					<tr>
+						<th class="　"><i class="xi"></i><i class="">상품합계금액</i></th>
+						<td><p class="tt_price c_black"><i class="tn">66,500</i><i class="tw">원</i></p></td>
+					</tr>
+					<tr>
+						<th class="　"><i class="xi"></i><i class="">배송비</i></th>
+						<td><p class="tt_price c_gray"><i class="tn">3,000</i><i class="tw">원</i></p></td>
+					</tr>
+					<tr>
+						<th class="　"><i class="xi"></i><i class="">적립금</i></th>
+						<td>
+							<div class="flex vc wrap">
+								<div><input type="text" class="input_st w2" />  원</div>
+								<div class="input_wrap ml20">
+									<p class="tt_price c_point2"><label class="label_st de"><input type="checkbox"><i class="xi"></i><span><strong>전액사용하기</strong></span></label><i class="tw s1">(보유 적립금 : <i class="tw s2 fW600">0원</i>)</i></p>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="　"><i class="xi"></i><i class="">최종결제금액</i></th>
+						<td><p class="tt_price c_point"><i class="tn s2">69,500</i><i class="tw s1">원</i></p></td>
+					</tr>
+				</table>
+
+            	<div class="board_tit mb page_sec"><i class="t1 mr20">결제수단 선택 / 결제</i></div>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write fs17">
+					<tbody>
+						<tr>
+							<td class="ac">
+								<ul class="label_wrap flex wrap vc hc">
+									<li><label class="label_st de"><input type="radio" onclick="labelCheck(this,'4')"><i class="xi"></i><span><strong>무통장입금</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio" onclick="labelCheck(this,'5')"><i class="xi"></i><span><strong>신용카드</strong></span></label></li>
+									<li><label class="label_st de ml30"><input type="radio" onclick="labelCheck(this,'6')"><i class="xi"></i><span><strong>가상계좌</strong></span></label></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="labelCheck" data-no="3">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_st write">
+						<colgroup>
+							<col class="w_form_tit">
+							<col class="w_form">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th class="　">배송비<i class="xi ess"></i></th>
+								<td>3,000원</td>
+							</tr>
+							<tr>
+								<th class="　">입금계좌<i class="xi ess"></i></th>
+								<td>
+									<label class="label_select w4">
+										<select class="input_st w4">
+											<option value="농협 352-1202-1632-53">농협 352-1202-1632-53</option>
+										</select>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th class="　">입금자명 <i class="xi ess"></i></th>
+								<td><input type="text" class="input_st w4"></td>
+							</tr>
+							<tr>
+								<th rowspan="2" class="　">현금영수증/계산서 <i class="xi ess"></i></th>
+								<td>
+									<label class="label_st de fs17"><input type="radio" name="tax_type" id="taxN" value="N" onclick="labelShow(this,'0','.wrap0')"><i class="xi"></i><span><strong>현금영수증</strong></span></label>
+									<label class="label_st de ml30 fs17"><input type="radio" name="tax_type" id="taxC" value="C" onclick="labelShow(this,'1','.wrap0')"><i class="xi"></i><span><strong>세금계산서</strong></span></label>
+								</td>
+							</tr>
+							<tr class="wrap0" data-no="0" style="display:none">
+								<td>
+									<div>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_orderSt">
+										<colgroup>
+											<col class="w_form_tit2">
+											<col class="w_auto">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th class="bg1">구분 <i class="xi ess"></i></th>
+												<td>
+													<label class="label_st de"><input type="radio"><i class="xi"></i><span><strong>소득공제용</strong></span></label>
+													<label class="label_st de ml30"><input type="radio"><i class="xi"></i><span><strong>지출증빙용</strong></span></label>
+												</td>
+											</tr>
+											<tr>
+												<th class="bg1">핸드폰 번호 <i class="xi ess"></i></th>
+												<td>
+												<div class="tel_group">
+													<label class="label_select">
+														<select class="input_st w2">
+															<option>010</option>
+														</select>
+													</label>
+													<span class="input_sec">-</span>
+													<input type="text" class="input_st w2" />
+													<span class="input_sec">-</span>
+													<input type="text" class="input_st w2" />
+												</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="bg1">사업자 번호 <i class="xi ess"></i></th>
+												<td><input type="text" class="input_st w4"></td>
+											</tr>
+										</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+							<tr class="wrap0" data-no="1" style="display:none">
+								<td>
+									<div>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0" class="board_orderSt">
+										<colgroup>
+											<col class="w_form_tit2">
+											<col class="w_auto">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th class="bg1">사업자 번호 <i class="xi ess"></i></th>
+												<td><input type="text" class="input_st w4"></td>
+											</tr>
+											<tr>
+												<th class="bg1">회사명 <i class="xi ess"></i></th>
+												<td><input type="text" class="input_st w4"></td>
+											</tr>
+											<tr>
+												<th class="bg1">대표자명 <i class="xi ess"></i></th>
+												<td><input type="text" class="input_st w4"></td>
+											</tr>
+											<tr>
+												<th class="bg1">업태 <i class="xi ess"></i></th>
+												<td><input type="text" class="input_st w4"></td>
+											</tr>
+											<tr>
+												<th class="bg1">종목 <i class="xi ess"></i></th>
+												<td><input type="text" class="input_st w4"></td>
+											</tr>
+											<tr>
+												<th class="bg1">사업장 주소 <i class="xi ess"></i></th>
+												<td>
+													<div class="input_wrap">
+														<input type="text" class="input_st w2" readonly />
+														<span class="input_sec w1"></span>
+														<button type="button" class="input_st c9">우편번호찾기</button>
+														<span class="input_row"></span>
+														<input type="text" class="input_st w100" readonly />
+														<span class="input_row"></span>
+														<input type="text" class="input_st w100" />
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th class="bg1">발행 이메일 <i class="xi ess"></i></th>
+												<td>
+													<div class="mail_group">
+														<input type="text" class="input_st w6">
+														<span class="input_sec">@</span>
+														<input type="text" class="input_st w6">
+														<label class="label_select">
+															<select class="input_st w6">
+																<option value="">직접입력</option>
+																<option value="naver.com">네이버</option>
+																<option value="gmail.com">지메일</option>
+																<option value="nate.com">네이트</option>
+																<option value="Korea.com">Korea</option>
+																<option value="hanafos.com">하나포스</option>
+																<option value="dreamwiz.com">드림위즈</option>
+																<option value="msn.com">MSN</option>
+																<option value="netian.com">네띠앙</option>
+																<option value="yahoo.co.kr">야후</option>
+																<option value="empas.com">엠파스</option>
+																<option value="chol.com">천리안</option>
+																<option value="hotmail.com">핫메일</option>
+																<option value="hanmail.net">한메일</option>
+															</select>
+														</label>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+                <div class="board_btn_wrap">
+                	<label class="label_st s2 c_gray"><input type="checkbox" /><i class="xi"></i><span> 주문할 상품의 결제정보를 확인하였으며 구매에 동의하십니까? (전자상거래법 제8조 2항) </span></label>
+                    <p class="page_sec2"></p>
+                    <button type="button" class="input_st c10 s1 w3" onclick="location.href='order_fin.html'"><p class="tt_price s2"><i class="tn">69,500</i><i class="tw">원 결제하기</i></p></button>
+                </div>
+            </div>
+            <div class="mall_order_fix linkNav" data-no="0">
+            	<div class="box3">
+                	<div class="fix_wrap">
+                    	<div class="add_wrap">
+                        	<p class="wrap_t1"><i class="xi xi-maker"></i><i>배송지</i></p>
+                            <p class="wrap_t2 page_sec05">서울시 금천구 가산동 123-465 sj테크노빌 10000</p>
+                        </div>
+                        <div class="con_wrap">
+                            <div class="price_wrap">
+                                <dl class="flex vb">
+                                    <dt class="wrap_t2">주문금액</dt>
+                                    <dd class="grow ar"><p class="tt_price s1"><i class="tn">66,500</i><i class="tw">원</i></p></dd>
+                                </dl>
+                                <dl class="flex vb">
+                                    <dt class="wrap_t2">할인금액</dt>
+                                    <dd class="grow ar"><p class="tt_price s1"><i class="tn">-0</i><i class="tw">원</i></p></dd>
+                                </dl>
+                                <dl class="flex vb">
+                                    <dt class="wrap_t2">배송비</dt>
+                                    <dd class="grow ar"><p class="tt_price s1"><i class="tn">3,000원</i></p></dd>
+                                </dl>
+                                <dl class="flex vb line">
+                                    <dt class="wrap_t1 c_point">결제예정금액</dt>
+                                    <dd class="grow ar c_point"><p class="tt_price"><i class="tn s2">69,500</i><i class="tw">원</i></p></dd>
+                                </dl>
+                            </div>
+                            <div class="payment_wrap ">결제수단선택</div>
+                            <label class="label_st s4"><input type="checkbox" /><i class="xi fix"></i><span> 주문할 상품의 결제정보를 확인하였으며 구매에 동의하십니까?</span></label>
+                            <button type="button" class="input_st c10 w3 payment_btn page_sec2" onclick="location.href='order_fin.html'"><p class="tt_price s2"><i class="tn">69,500</i><i class="tw">원 결제하기</i></p></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!---->
+
+<!--footer-->
+<div id="footer">
+	<div class="info_wrap">
+		<div class="box0">
+			<ul class="con_wrap flex wrap vc">
+				<li class="f1">
+					<div class="inner">
+						<div class="logo"><div class="in"><img src="images/sian/logo_mark.png" alt="" /></div></div>
+						<ul class="info flex wrap">
+							<li><span class="tt">디오세라믹</span></li>
+							<li><span class="tt">대표. 이영경</span></li>
+							<li class="br"></li>
+							<li><span class="tt">매장주소. 서울특별시 강남구 테헤란로 427, 위워크 타워 12층</span></li>
+							<li class="br"></li>
+							<li><span class="tt">창고주소. 경기도 성남시 분당구 판교역로 166, 카카오판교오피스 7층</span></li>
+							<li class="br"></li>
+							<li><span class="tt">사업자등록번호. 123-45-67890</span></li>
+							<li><span class="tt">통신판매신고번호. 123-45-67890</span></li>
+							<li class="br"></li>
+							<li><span class="tt">개인정보관리책임자. 홍길동</span></li>
+						</ul>
+						<div class="copyright"><span class="tt">COPYRIGHT (C) Dio Ceramic. ALL RIGHTS RESERVED.</span></div>
+					</div>
+				</li>
+				<li class="cs f2">
+					<div class="inner">
+						<div class="tit"><b class="tt">CS Center</b></div>
+						<div class="con">
+							<div class="company"><strong class="tt">02-1234-5678</strong></div>
+							<div class="tel"><strong class="tt">평일 10:00 - 18:00</strong></div>
+							<div class="time">
+								<p class="tt">점심시간: 12:00 - 13:00
+								<p class="tt">(토 / 일 / 공휴일 휴무)</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="cs f4">
+					<div class="inner">
+						<div class="main_more flex small st1 wrap">
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">카카오톡 문의</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="quinry.html" class="more_in"><i class="tt">1:1 문의</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">배송안내</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">환불정책</i><i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div>
+				</li>
+				<li class="cs f3">
+					<div class="inner">
+						<div class="tit"><b class="tt">Bank Account</b></div>
+						<div class="con">
+							<div class="bank">
+								<p class="t1">하나은행</p>
+								<p class="t2"><strong>123456-01-123456</strong></p>
+								<p class="t3">예금주. 이영경</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="menu_wrap">
+		<div class="box0">
+			<div class="wrap_in flex vc space">
+				<ul class="menu flex wrap">
+					<li><a href="about.html" class="in" ><span class="tt">회사소개</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">견적문의</span></a></li>
+					<li><a href="javascript:void(0);" class="in c_point"><span class="tt">개인정보처리방침</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">이용약관</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">배송/교환/환불정보</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">이메일무단수집거부</span></a></li>
+					<li><a href="notice.html" class="in"><span class="tt">고객센터</span></a></li>
+				</ul>
+				<ul class="sns flex wrap">
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-shop"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-instagram"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-naver"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-youtube-play"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer end-->
+
+</body>
+</html>
+
+</body>
+</html>

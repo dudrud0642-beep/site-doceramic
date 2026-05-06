@@ -1,0 +1,977 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>쇼핑몰 포트폴리오</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper/swiper.js"></script> 
+<script src="js/ui.js"></script> 
+<script src="js/inc.js"></script> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="board.css">
+<link rel="stylesheet" type="text/css" href="inc.css">
+<link rel="stylesheet" type="text/css" href="style_response.css">
+<link rel="stylesheet" type="text/css" href="board_responsele.css">
+<link rel="stylesheet" type="text/css" href="js/swiper/swiper.css" />
+<link rel="stylesheet" type="text/css" href="xeicon.min.css">
+<link rel="stylesheet" type="text/css" href="font.css">
+
+</head>
+
+<body>
+<div id="header">
+	<div class="headerIn">
+		<div class="mem_wrap">
+			<div class="box0">
+				<ul class="menu flex vc hr">
+					<li><a href="about.html" class="in vm_wrap"><i class="tt">회사소개</i></a></li>
+					<li class="down"><a href="notice.html" class="in vm_wrap"><i class="tt c_point2">고객센터</i><i class="xi arrow c_point2"></i></a>
+						<ul class="down_menu">
+							<li><a href="faq.html"><i class="tt">FAQ</i></a></li>
+							<li><a href="inquiry.html"><i class="tt">1:1문의하기</i></a></li>
+							<li><a href="notice.html"><i class="tt">공지사항</i></a></li>
+						</ul>
+					</li>
+                    <li class="down"><a href="mypage.html" class="in vm_wrap"><i class="tt">마이페이지</i><i class="xi arrow"></i></a>
+                        <ul class="down_menu">
+                            <li><a href="mypage.html"><i class="tt">나의 구매내역</i></a></li>
+                            <li><a href="modify.html"><i class="tt">나의 회원정보</i></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);" class="in vm_wrap"><i class="tt">LOGOUT</i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="top_wrap">
+			<div class="box0">
+				<div class="wrap_in flex wrap space vc">
+					<div class="etc_wrap flex mgR">
+						<div class="etc_menu flex vc">
+							<div class="all toggleWrap">
+								<a href="javascript:void(0);" class="link all_btn flex vc" onClick="toggleClass(this); toggleClass(this,'html,body','hidden')">
+                                	<div class="in"><i class="ham"></i></div><span class="tt">ALL CATEGORY</span>
+                                </a>
+								<div class="all_wrap">
+									<div class="wrap_bg" onClick="toggleClass(this); toggleClass(this,'html,body','hidden')"></div>
+									<div class="wrap_in flex ah">
+										<div id="nav" class="all_gnb">
+											<div class="inner flex col js_mouse_wheel">
+												<div class="all_logo"><img src="images/inc/logo.png" alt="logo" /></div>
+												<div class="all_gnb_wrap">
+                                                     <ul class="gnb flex">
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">스타일</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">모던</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">스톤</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">테라조</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">빈티지</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">공간별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">거실</span></a></li>
+                                                                <li class=""><a href="prod.html"><span class="tt">욕실</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">주방</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">현관</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">색상별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">화이트</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">그레이</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">블랙</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">유채색</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">사이즈별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">300</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">600</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">1200</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">박판</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="prod.html" class="dp1 flex ac"><span class="tt">재질별</span></a>
+                                                            <ul class="dp2 flex">
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">무광</span></a></li>
+                                                                <li class=""><a href="prod.html" class="flex vc"><span class="tt">유광</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="lineSt menuNo menuNo2"><a href="" class="dp1 flex ac col"><span class="tt">입고예정상품 예약</span></a></li>
+                                                        <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">운임/양중금액</span></a></li>
+                                                        <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">이벤트</span></a></li>
+                                                    </ul>
+                                                </div>
+												<div class="all_banner">
+													<a href="javascript:void(0);" class="in bgfix resize s5" style="background-image:url()"></a>
+												</div>
+												<div class="all_gnb_wrap2">
+													<ul class="gnb flex">
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">신제품</span></a></li>
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">베스트제품</span></a></li>
+														<li class=""><a href="prod.html" class="dp1 flex ac col"><span class="tt">고객센터</span></a></li>
+													</ul>
+												</div>
+												<div class="all_cs mgT">
+													<div class="cs">
+														<div class="tit">CS Center</div>
+														<div class="tt"><p class="t1"><a>02-1234-5678</a></p></div>
+														<div class="tt"><i class="t2">평일 10:00 - 18:00</i></div>
+                                                        <div class="tt"><i class="t2">점심시간: 12:00 - 13:00</i></div>
+                                                        <div class="tt"><i class="t2">(토 / 일 / 공휴일 휴무)</i></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="logo_wrap"><h1 class="logo flex"><a href="index.html" class="in"><img src="images/inc/logo.png" alt="" /></a><span class="in_txt">디오세라믹 대한민국 대표 타일 쇼핑몰</span></h1></div>
+					<div class="menuR menuR ar mgL">
+						<div class="inner flex vc">
+								<div class="search_wrap">
+									<div class="inn search_btn">
+										<input type="text"  class="input_st inSearch" placeholder="검색어를 입력하세요."><button type="button" class="btn"><i class="xi"></i></button>
+									</div>
+								</div>
+							<ul class="icon_menu flex vc">
+								<li class=""><a href="cart.html" class="in vm_wrap"><span class="vm"><i class="xi xi-market icon"></i><i class="no cart_no">3</i></span></a></li>
+                                <li class=""><a href="mypage.html" class="in vm_wrap"><span class="vm"><i class="xi xi-user-o icon"></i><i class="tt">마이페이지</i></span></a></li>
+								<li class="cs"><a href="javascript:void(0);" class="in vm_wrap"><span class="vm"><i class="xi xi-headset icon"></i></span></a>
+									<ul class="menu_list">
+										<li><a href="notice.html" class="in vm_wrap"><i class="ttt">공지사항</i></a></li>
+										<li><a href="inquiry.html" class="in vm_wrap"><i class="ttt">1:1문의</i></a></li>
+										<li><a href="faq.html" class="in vm_wrap"><i class="ttt">FAQ</i></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu_wrap">
+        	<div class="box2 gnb_menu">
+            	<ul class="gnb flex">
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">신제품</span></a></li>
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">베스트제품</span></a></li>
+                    <li class="menuNo"><a href="prod.html" class="dp1 flex ac"><span class="tt">외장타일</span></a></li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">스타일</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">모던</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">스톤</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">테라조</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">빈티지</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">공간별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">거실</span></a></li>
+                            <li class=""><a href="prod.html"><span class="tt">욕실</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">주방</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">현관</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">색상별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">화이트</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">그레이</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">블랙</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">유채색</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">사이즈별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">300</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">600</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">1200</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">박판</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="prod.html" class="dp1 flex ac"><span class="tt">재질별</span></a>
+                        <ul class="dp2 flex">
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">무광</span></a></li>
+                            <li class=""><a href="prod.html" class="flex vc"><span class="tt">유광</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lineSt menuNo menuNo2"><a href="" class="dp1 flex ac col"><span class="tt">입고예정상품 예약</span></a></li>
+                    <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">운임/양중금액</span></a></li>
+                    <li class="menuNo menuNo2"><a href="javascript:void(0);" class="dp1 flex ac col"><span class="tt">이벤트</span></a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+</div>
+<!--header end-->
+
+<!--quick end-->
+<div id="quick">
+	<div class="quickWrap flex vb">
+		<ul class="menu">
+            <li class="def"><a href="mypage.html" class="in"><i class="xi xi-profile-o"></i><i class="tt">마이페이지</i></a></li>
+            <li class="def"><a href="join.html" class="in"><i class="xi xi-user-plus-o"></i><i class="tt">간편 회원가입</i></a></li>
+			<li class="def"><a href="inquiry.html" class="in"><i class="xi xi-message-o"></i><i class="tt">1:1 문의</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-kakaotalk kakao"></i><i class="tt">카카오톡 문의</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-shop"></i><i class="tt">방문상담 예약</i></a></li>
+			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-border-color"></i><i class="tt">견적문의</i></a></li>
+			<li class="top"><a href="javascript:void(0);" class="in" onClick="goTop()"><div><i class="xi xi-angle-up"></i><i class="tt">TOP</i></div></a></li>
+		</ul>
+	</div>
+</div>
+<!--quick end-->
+
+
+<div class="mainSlider_wrap fullH">
+	<div class="swiper-container mainSlider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide el">
+				<div class="bg bgfix pa100" style="background-image:url(images/sian/main_visual1.jpg)"></div>
+				<div class="mainSlogan">
+					<div class="box1">
+						<div class="in_ani">
+							<div class="tit"><div class="tt_in"><p class="t1">PASSEPARTOUT RUSTY BLUE</p></div></div>
+							<div class="txt"><div class="tt_in"><p class="t2">파세파투 러스티 블루 <b>50% 초특가 세일!</b></p></div></div>
+							<div class="txt"><div class="tt_in"><p class="t3">해당 배너에 대한 간략한 설명이 들어갑니다. 해당 배너에 대한 간략한 설명이 들어갑니다. 해당 배너에 대한 간략한 설명이 들어갑니다.</p></div></div>
+							<div class="btn"><a href="#link" class="btn_in"><i class="tt">자세히보기</i><i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide el">
+				<div class="bg bgfix pa100" style="background-image:url(images/sian/main_visual2.jpg)"></div>
+				<div class="mainSlogan">
+					<div class="box1">
+						<div class="in_ani">
+							<div class="tit"><div class="tt_in"><p class="t1">BRICKLANE CEMENTO</p></div></div>
+							<div class="txt"><div class="tt_in"><p class="t2">브릭레인 세멘토 <b>2022 신제품 지금 바로 확인하세요!</b></p></div></div>
+							<div class="txt"><div class="tt_in"><p class="t3">해당 배너에 대한 간략한 설명이 들어갑니다.</p></div></div>
+							<div class="btn"><a href="#link" class="btn_in"><i class="tt">자세히보기</i><i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide el">
+				<div class="bg bgfix pa100" style="background-image:url(images/sian/main_visual3.jpg)"></div>
+				<div class="mainSlogan">
+					<div class="box1">
+						<div class="in_ani">
+							<div class="tit"><div class="tt_in"><p class="t1">CARDOSO ANTRACITE</p></div></div>
+							<div class="txt"><div class="tt_in"><p class="t2">카르도소 안트라시테 <b>입고예정 상품! Coming Soon</b></p></div></div>
+							<div class="txt"><div class="tt_in"><p class="t3">해당 배너에 대한 간략한 설명이 들어갑니다.</p></div></div>
+							<div class="btn"><a href="#link" class="btn_in"><i class="tt">자세히보기</i><i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mainBtn flex vc space">
+		<div class="mainSlider-prev btn"><i class="xi xi-angle-left-thin"></i></div>
+		<div class="mainSlider-next btn"><i class="xi xi-angle-right-thin"></i></div>
+	</div>
+</div>
+<div class="main_con main_bnSlide_wrap">
+	<div class="box0">
+		<div class="bnSlide_list pageSlider">
+			<div class="list flex">
+				<div class="el">
+					<a href="javascript:void(0);" class="inner">
+						<div class="img_wrap"><div class="resize s3 bgfix" style="background-image:url(images/sian/main_bn1_01.jpg)"></div></div>
+						<div class="con_wrap">
+							<div class="txt"><p class="t1">SERVICE</p></div>
+							<div class="txt"><p class="t2">매일 신제품 업로드</p></div>
+							<div class="txt"><p class="ex">새로움과 다양함을 원하시는 고객님,<br />신제품을 빠르게 만나보세요.</p></div>
+						</div>
+					</a>
+				</div>
+				<div class="el">
+					<a href="javascript:void(0);" class="inner">
+						<div class="img_wrap"><div class="resize s3 bgfix" style="background-image:url(images/sian/main_bn1_02.jpg)"></div></div>
+						<div class="con_wrap">
+							<div class="txt"><p class="t1">SERVICE</p></div>
+							<div class="txt"><p class="t2">편리한 검색 시스템</p></div>
+							<div class="txt"><p class="ex">특정 제품을 찾는 고객님,<br />원하는 제품을 빠르게 찾아보세요.</p></div>
+						</div>
+					</a>
+				</div>
+				<div class="el">
+					<a href="javascript:void(0);" class="inner">
+						<div class="img_wrap"><div class="resize s3 bgfix" style="background-image:url(images/sian/main_bn1_03.jpg)"></div></div>
+						<div class="con_wrap">
+							<div class="txt"><p class="t1">SERVICE</p></div>
+							<div class="txt"><p class="t2">입고 예정상품 확인</p></div>
+							<div class="txt"><p class="ex">최초 입고 상품을 원하시는 고객님,<br />제품을 할인된 금액으로 만나보세요.</p></div>
+						</div>
+
+					</a>
+				</div>
+				<div class="el">
+					<a href="javascript:void(0);" class="inner">
+						<div class="img_wrap"><div class="resize s3 bgfix" style="background-image:url(images/sian/main_bn1_04.jpg)"></div></div>
+						<div class="con_wrap">
+							<div class="txt"><p class="t1">SERVICE</p></div>
+							<div class="txt"><p class="t2">오프라인 매장 운영</p></div>
+							<div class="txt"><p class="ex">직접 체험하고 상담 받고 싶은 고객님,<br />방문사담을 예약 해주세요!</p></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main_con main_member bg1">
+	<div class="box0">
+		<div class="main_tit ac">
+			<div class="tit">
+				<p class="tt t1"><b class="c_point">Membership</b></p>
+				<p class="tt t3">회원가입 후 모든 혜택이 제공됩니다</p>
+			</div>
+		</div>
+		<div class="list_wrap">
+			<ul class="list flex wrap">
+				<li class="flex linkCur">
+					<div class="inner">
+						<div class="icon_wrap">
+							<div class="icon flex ac"><img src="images/sian/icon_main_mem01.svg" alt="" /></div>
+						</div>
+						<div class="con_wrap">
+							<p class="tt t1">간편하고 빠른 1초 회원가입</p>
+							<p class="tt t2">쉽고 빠르게 모든혜택을 누리세요!</p>
+						</div>
+					</div>
+				</li>
+				<li class="flex linkCur" >
+					<div class="inner">
+						<div class="icon_wrap">
+							<div class="icon flex ac"><img src="images/sian/icon_main_mem02.svg" alt="" /></div>
+						</div>
+						<div class="con_wrap">
+							<p class="tt t1">타일 수배서비스</p>
+							<p class="tt t2">찾으시는 제품을 요청해보세요!</p>
+						</div>
+					</div>
+				</li>
+				<li class="flex linkCur">
+					<div class="inner">
+						<div class="icon_wrap">
+							<div class="icon flex ac"><img src="images/sian/icon_main_mem03.svg" alt="" /></div>
+						</div>
+						<div class="con_wrap">
+							<p class="tt t1">샘플발송 서비스</p>
+							<p class="tt t2">직접 보고, 만져보는 경험을 제공해요!</p>
+						</div>
+					</div>
+				</li>
+				<li class="flex linkCur">
+					<div class="inner">
+						<div class="icon_wrap">
+							<div class="icon flex ac"><img src="images/sian/icon_main_mem04.svg" alt="" /></div>
+						</div>
+						<div class="con_wrap">
+							<p class="tt t1">시공자 연결시스템</p>
+							<p class="tt t2">서비스 준비중</p>
+						</div>
+					</div>
+				</li>
+				</li>
+			</ul>
+		</div>
+		<div class="main_more ac">
+			<div><a href="join.html" class="more_in st1"><i class="tt">1초 회원가입 바로가기</i><i class="xi xi-arrow-right"></i></a></div>
+		</div>
+	</div>
+</div>
+<div class="main_con main_product">
+	<div class="box0">
+		<div class="main_tit ac">
+			<div class="tit">
+				<p class="tt t1"><b>New Arrivals</b></p>
+				<p class="tt t3">디오세라믹의 이번주 신제품을 확인하세요.</p>
+			</div>
+		</div>
+		<div class="prod_layout flex wrap">
+			<div class="big_wrap flex">
+				<a class="inner" href="prod.html">
+					<div class="img bgfix" style="background-image:url(images/sian/prod_big01.jpg)"></div>
+				</a>
+			</div>
+			<div class="small_wrap">
+				<div class="main_prod_list">
+					<ul class="list flex wrap">
+						<li class="flex">
+							<a href="prod.html" class="inner">
+								<div class="img_wrap">
+									<div class="resize bgWrap">
+										<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img01.jpg)"></div>
+										<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img01_hov.jpg)"></div>
+									</div>
+								</div>
+								<div class="con_wrap">
+									<div class="tit">
+										<p class="tt t1">PASSEPARTOUT BIANCO</p>
+										<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+									</div>
+									<div class="price_wrap flex vb">
+										<div class="price_in stock">
+											<p class="tt t1">재고수량</p><p class="tt t2 call"><i class="xi xi-call"></i> <i class="in_t">유선문의</i></p>
+										</div>
+										<div class="price_in price mgL">
+											<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+											<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="flex">
+							<a href="prod.html" class="inner">
+								<div class="img_wrap">
+									<div class="resize bgWrap">
+										<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img02.jpg)"></div>
+										<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img02_hov.jpg)"></div>
+									</div>
+								</div>
+								<div class="con_wrap">
+									<div class="tit">
+										<p class="tt t1">PASSEPARTOUT BIANCO</p>
+										<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+									</div>
+									<div class="price_wrap flex vb">
+										<div class="price_in stock">
+											<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+										</div>
+										<div class="price_in price mgL">
+											<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+											<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="flex">
+							<a href="prod.html" class="inner">
+								<div class="img_wrap">
+									<div class="resize bgWrap">
+										<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img03.jpg)"></div>
+										<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img01_hov.jpg)"></div>
+									</div>
+								</div>
+								<div class="con_wrap">
+									<div class="tit">
+										<p class="tt t1">PASSEPARTOUT BIANCO</p>
+										<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+									</div>
+									<div class="price_wrap flex vb">
+										<div class="price_in stock">
+											<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+										</div>
+										<div class="price_in price mgL">
+											<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+											<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="flex">
+							<a href="prod.html" class="inner">
+								<div class="img_wrap">
+									<div class="resize bgWrap">
+										<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img04.jpg)"></div>
+										<div class="re bgfix bg bgB" style="background-image:url(mages/sian/prod_img02_hov.jpg)"></div>
+									</div>
+								</div>
+								<div class="con_wrap">
+									<div class="tit">
+										<p class="tt t1">PASSEPARTOUT BIANCO</p>
+										<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+									</div>
+									<div class="price_wrap flex vb">
+										<div class="price_in stock">
+											<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+										</div>
+										<div class="price_in price mgL">
+											<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+											<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main_more ac">
+			<div><a href="prod.html" class="more_in"><i class="tt">View More</i><i class="xi xi-arrow-right"></i></a></div>
+		</div>
+	</div>
+</div>
+<div class="main_con main_product">
+	<div class="box0">
+		<div class="main_tit ac">
+			<div class="tit">
+				<p class="tt t1"><b>Best Product</b></p>
+				<p class="tt t3">디오세라믹에서 가장 인기있는 베스트제품입니다.</p>
+			</div>
+		</div>
+		<div class="main_prod_list">
+			<ul class="list flex wrap">
+				<li class="flex">
+					<a href="prod.html" class="inner">
+						<div class="img_wrap">
+							<div class="resize bgWrap">
+								<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img01.jpg)"></div>
+								<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img01_hov.jpg)"></div>
+							</div>
+						</div>
+						<div class="con_wrap">
+							<div class="tit">
+								<p class="tt t1">PASSEPARTOUT BIANCO</p>
+								<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+							</div>
+							<div class="price_wrap flex vb">
+								<div class="price_in stock">
+									<p class="tt t1">재고수량</p><p class="tt t2 call"><i class="xi xi-call"></i> <i class="in_t">유선문의</i></p>
+								</div>
+								<div class="price_in price mgL">
+									<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+									<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="prod.html" class="inner">
+						<div class="img_wrap">
+							<div class="resize bgWrap">
+								<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img02.jpg)"></div>
+								<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img02_hov.jpg)"></div>
+							</div>
+						</div>
+						<div class="con_wrap">
+							<div class="tit">
+								<p class="tt t1">PASSEPARTOUT BIANCO</p>
+								<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+							</div>
+							<div class="price_wrap flex vb">
+								<div class="price_in stock">
+									<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+								</div>
+								<div class="price_in price mgL">
+									<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+									<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="prod.html" class="inner">
+						<div class="img_wrap">
+							<div class="resize bgWrap">
+								<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img03.jpg)"></div>
+								<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img01_hov.jpg)"></div>
+							</div>
+						</div>
+						<div class="con_wrap">
+							<div class="tit">
+								<p class="tt t1">PASSEPARTOUT BIANCO</p>
+								<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+							</div>
+							<div class="price_wrap flex vb">
+								<div class="price_in stock">
+									<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+								</div>
+								<div class="price_in price mgL">
+									<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+									<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="prod.html" class="inner">
+						<div class="img_wrap">
+							<div class="resize bgWrap">
+								<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img04.jpg)"></div>
+								<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img02_hov.jpg)"></div>
+							</div>
+						</div>
+						<div class="con_wrap">
+							<div class="tit">
+								<p class="tt t1">PASSEPARTOUT BIANCO</p>
+								<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+							</div>
+							<div class="price_wrap flex vb">
+								<div class="price_in stock">
+									<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+								</div>
+								<div class="price_in price mgL">
+									<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+									<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="prod.html" class="inner">
+						<div class="img_wrap">
+							<div class="resize bgWrap">
+								<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img05.jpg)"></div>
+								<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img05_hov.jpg)"></div>
+							</div>
+						</div>
+						<div class="con_wrap">
+							<div class="tit">
+								<p class="tt t1">PASSEPARTOUT BIANCO</p>
+								<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+							</div>
+							<div class="price_wrap flex vb">
+								<div class="price_in stock">
+									<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+								</div>
+								<div class="price_in price mgL">
+									<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+									<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="prod.html" class="inner">
+						<div class="img_wrap">
+							<div class="resize bgWrap">
+								<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img06.jpg)"></div>
+								<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img06_hov.jpg)"></div>
+							</div>
+						</div>
+						<div class="con_wrap">
+							<div class="tit">
+								<p class="tt t1">PASSEPARTOUT BIANCO</p>
+								<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+							</div>
+							<div class="price_wrap flex vb">
+								<div class="price_in stock">
+									<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+								</div>
+								<div class="price_in price mgL">
+									<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+									<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="prod.html" class="inner">
+						<div class="img_wrap">
+							<div class="resize bgWrap">
+								<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img01.jpg)"></div>
+								<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img01_hov.jpg)"></div>
+							</div>
+						</div>
+						<div class="con_wrap">
+							<div class="tit">
+								<p class="tt t1">PASSEPARTOUT BIANCO</p>
+								<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+							</div>
+							<div class="price_wrap flex vb">
+								<div class="price_in stock">
+									<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+								</div>
+								<div class="price_in price mgL">
+									<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+									<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="prod.html" class="inner">
+						<div class="img_wrap">
+							<div class="resize bgWrap">
+								<div class="re bgfix bg bgA" style="background-image:url(images/sian/prod_img02.jpg)"></div>
+								<div class="re bgfix bg bgB" style="background-image:url(images/sian/prod_img02_hov.jpg)"></div>
+							</div>
+						</div>
+						<div class="con_wrap">
+							<div class="tit">
+								<p class="tt t1">PASSEPARTOUT BIANCO</p>
+								<p class="tt t2">파세파투 비앙코 600X600 / 1.44 / 4장 / ITALY</p>
+							</div>
+							<div class="price_wrap flex vb">
+								<div class="price_in stock">
+									<p class="tt t1">재고수량</p><p class="tt t2">100 BOX</p>
+								</div>
+								<div class="price_in price mgL">
+									<div class="price_mt flex vc hr"><p class="t1">1m<sup>2</sup></p><p class="t2">57,000 원</p></div>
+									<div class="price_bx flex vc hr"><p class="t1">BOX</p><p class="t2">82,000 원</p></div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main_more ac">
+			<div><a href="prod.html" class="more_in"><i class="tt">View More</i><i class="xi xi-arrow-right"></i></a></div>
+		</div>
+	</div>
+</div>
+<div class="main_con main_banner">
+	<div class="box0">
+		<div class="list_wrap cw">
+			<ul class="list flex wrap">
+				<li class="flex">
+					<a href="inquiry.html" class="inner bgfix" style="background-image:url(images/sian/main_bn2_01.jpg)">
+						<div class="main_tit">
+							<div class="tit">
+								<p class="tt t3">Inquiry</p>
+								<p class="tt t2"><b>1:1 문의하기</b></p>
+							</div>
+							<div class="txt">
+								<p class="tt t4">궁금하신 사항을 문의해 주시면 빠르게 상담해 드리겠습니다.</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="javascript:void(0);" class="inner bgfix" style="background-image:url(images/sian/main_bn2_02.jpg)">
+						<div class="main_tit">
+							<div class="tit">
+								<p class="tt t3">Kakao Talk Inquiry</p>
+								<p class="tt t2"><b>카카오톡 문의하기</b></p>
+							</div>
+							<div class="txt">
+								<p class="tt t4">카카오톡으로 좀 더 간편하게 실시간 상담을 하실 수 있습니다.</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="flex">
+					<a href="javascript:void(0);" class="inner bgfix" style="background-image:url(images/sian/main_bn2_03.jpg)">
+						<div class="main_tit">
+							<div class="tit">
+								<p class="tt t3">Request a sample</p>
+								<p class="tt t2"><b>샘플신청하기</b></p>
+							</div>
+							<div class="txt">
+								<p class="tt t4">디오세라믹은 회원제 샘플발송 서비스를 제공합니다.</p>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="main_con main_instagram pt0">
+	<div class="box0">
+		<div class="main_tit ac">
+			<div class="tit">
+				<p class="tt"><i class="xi xi-instagram in_icon"></i></p>
+				<p class="tt t5"><b>Instagram</b></p>
+				<p class="tt t3"><a href="javascript:void(0);">@dio_ceramic_offcial</a></p>
+			</div>
+		</div>
+		<div class="list_wrap">
+			<ul class="list flex wrap">
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img01.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img02.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img03.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img04.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img05.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img01.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img02.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img03.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="#link" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img04.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img05.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img01.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="#link" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img02.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img03.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img04.jpg)"></div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img05.jpg)"></div>
+					</a>
+				</li>
+                <li>
+					<a href="javascript:void(0);" class="inner">
+						<div class="img resize bgfix" style="background-image:url(images/sian/insta_img01.jpg)"></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--footer-->
+<div id="footer">
+	<div class="info_wrap">
+		<div class="box0">
+			<ul class="con_wrap flex wrap vc">
+				<li class="f1">
+					<div class="inner">
+						<div class="logo"><div class="in"><img src="images/sian/logo_mark.png" alt="" /></div></div>
+						<ul class="info flex wrap">
+							<li><span class="tt">디오세라믹</span></li>
+							<li><span class="tt">대표. 이영경</span></li>
+							<li class="br"></li>
+							<li><span class="tt">매장주소. 서울특별시 강남구 테헤란로 427, 위워크 타워 12층</span></li>
+							<li class="br"></li>
+							<li><span class="tt">창고주소. 경기도 성남시 분당구 판교역로 166, 카카오판교오피스 7층</span></li>
+							<li class="br"></li>
+							<li><span class="tt">사업자등록번호. 123-45-67890</span></li>
+							<li><span class="tt">통신판매신고번호. 123-45-67890</span></li>
+							<li class="br"></li>
+							<li><span class="tt">개인정보관리책임자. 홍길동</span></li>
+						</ul>
+						<div class="copyright"><span class="tt">COPYRIGHT (C) Dio Ceramic. ALL RIGHTS RESERVED.</span></div>
+					</div>
+				</li>
+				<li class="cs f2">
+					<div class="inner">
+						<div class="tit"><b class="tt">CS Center</b></div>
+						<div class="con">
+							<div class="company"><strong class="tt">02-1234-5678</strong></div>
+							<div class="tel"><strong class="tt">평일 10:00 - 18:00</strong></div>
+							<div class="time">
+								<p class="tt">점심시간: 12:00 - 13:00
+								<p class="tt">(토 / 일 / 공휴일 휴무)</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="cs f4">
+					<div class="inner">
+						<div class="main_more flex small st1 wrap">
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">카카오톡 문의</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">1:1 문의</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">배송안내</i><i class="xi xi-arrow-right"></i></a></div>
+							<div><a href="javascript:void(0);" class="more_in"><i class="tt">환불정책</i><i class="xi xi-arrow-right"></i></a></div>
+						</div>
+					</div>
+				</li>
+				<li class="cs f3">
+					<div class="inner">
+						<div class="tit"><b class="tt">Bank Account</b></div>
+						<div class="con">
+							<div class="bank">
+								<p class="t1">하나은행</p>
+								<p class="t2"><strong>123456-01-123456</strong></p>
+								<p class="t3">예금주. 이영경</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="menu_wrap">
+		<div class="box0">
+			<div class="wrap_in flex vc space">
+				<ul class="menu flex wrap">
+					<li><a href="javascript:void(0);" class="in" ><span class="tt">회사소개</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">이용안내</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">견적문의</span></a></li>
+					<li><a href="javascript:void(0);" class="in c_point"><span class="tt">개인정보처리방침</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">이용약관</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">배송/교환/환불정보</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">이메일무단수집거부</span></a></li>
+					<li><a href="javascript:void(0);" class="in"><span class="tt">고객센터</span></a></li>
+				</ul>
+				<ul class="sns flex wrap">
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-shop"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-instagram"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-naver"></i></a></li>
+					<li><a href="javascript:void(0);" class="in" target="_blank"><i class="xi xi-youtube-play"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer end-->
+
+<script type="text/javascript">
+UI.Slider.mainVisual();
+</script>
+
+
+</body>
+</html>
