@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="board.css">
 <link rel="stylesheet" type="text/css" href="inc.css">
 <link rel="stylesheet" type="text/css" href="style_response.css">
-<link rel="stylesheet" type="text/css" href="board_responsele.css">
+<link rel="stylesheet" type="text/css" href="board_response.css">
 <link rel="stylesheet" type="text/css" href="js/swiper/swiper.css" />
 <link rel="stylesheet" type="text/css" href="xeicon.min.css">
 <link rel="stylesheet" type="text/css" href="font.css">
@@ -221,7 +221,7 @@
 <div id="quick">
 	<div class="quickWrap flex vb">
 		<ul class="menu">
-            <<li class="def"><a href="mypage.html" class="in"><i class="xi xi-profile-o"></i><i class="tt">마이페이지</i></a></li>
+            <li class="def"><a href="mypage.html" class="in"><i class="xi xi-profile-o"></i><i class="tt">마이페이지</i></a></li>
             <li class="def"><a href="join.html" class="in"><i class="xi xi-user-plus-o"></i><i class="tt">간편 회원가입</i></a></li>
 			<li class="def"><a href="inquiry.html" class="in"><i class="xi xi-message-o"></i><i class="tt">1:1 문의</i></a></li>
 			<li class="def"><a href="javascript:void(0);" class="in"><i class="xi xi-kakaotalk kakao"></i><i class="tt">카카오톡 문의</i></a></li>
@@ -255,8 +255,8 @@
 			</thead>
 			<tbody>
 			<tr>
-				<td class="w_date2 ac"><div><i class="db">0000-00-00</i> <i>123456789012</i></div></td>
-				<td class="w_auto al">
+				<td class="w_date2" data-th="날짜/주문번호"><div><i class="db">0000-00-00</i> <i>123456789012</i></div></td>
+				<td class="w_auto al" data-th="상품명/옵션">
 					<ul class="flex_table wishSt">
 						<li>
 							<div class="tr flex p1">
@@ -276,7 +276,7 @@
 						</li>
 					</ul>
 				</td>
-				<td class="w_price3">
+				<td class="w_price3" data-th="상품금액/수량">
 					<div class="flex vc hc wrap">
 						<div class="td wPrice">
 							<p class="tt_price"><i class="tn">66,500</i><i class="tw">원</i></p>
@@ -286,7 +286,7 @@
 						</div>
 					</div>
 				</td>
-				<td class="w_state">
+				<td class="w_state" data-th="주문배송상태">
 					<div>
 						<input type="button" class="input_st c1 re s3" value="결제대기중"/>
 						<input type="button" class="input_st c9 re s3 mt5" value="주문취소"/>

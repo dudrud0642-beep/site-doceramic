@@ -117,8 +117,9 @@ body{ font-size:14px;}
 #quick{right:0; bottom:0; width:100%;}
 #quick .quickWrap{border-radius:inherit;}
 #quick .quickWrap .menu{border-radius:inherit; display:flex; width:100%; align-content:center; align-items:center;}
-#quick .quickWrap .menu > li.def{flex:1;}
+#quick .quickWrap .menu > li.def{flex:1; border-bottom: none;}
 #quick .quickWrap .menu > li.top{display:none}
+
 
 #header.gnbOpen .menu_wrap .gnb_menu .gnb > li{ height:4em;}
 #header .top_wrap .flexH, #header .menu_wrap .gnb_menu .gnb > li,
@@ -226,7 +227,9 @@ body.footerCheck .mall_order_wrap .mall_order_fix.on{position:static;}
 #footer .menu_wrap .menu > li .in .tt{font-size:.813em; color:#666;}
 #footer .menu_wrap .sns {order:-1;}
 
-
+.page_tit_wrap { flex-wrap: wrap; gap: 0.5em; }
+.page_tit_wrap > div:first-child { flex: 1 0 100%; }
+.page_tit_wrap > div:last-child { flex: 1 0 100%; display: flex; flex-wrap: wrap; }
 }
 
 @media screen and (max-width:900px){
@@ -279,6 +282,7 @@ body.footerCheck .mall_order_wrap .mall_order_fix.on{position:static;}
 
 .page_guide_faq{margin:4em 0;}
 .page_guide_faq .inner .conL{width:25em;}
+.mCartst.flex_table > li > .tr > .td.wPrice2 > div .tt_price.page_sec0{margin-top: 0 !important;}
 .page_guide_link .list > li .in{background-size:cover}
 
 .page_customer_infowrap .in .con2{width:100%;}
@@ -398,6 +402,13 @@ body:not(.main) #footer{margin-top:5em;}
 
 #contents .sub_page_tit .t1{font-size:2em;}
 #contents .sub_page_tit .ent{font-size:.750em;}
+
+.mCartst .tt_price.before { display: inline-block !important; width: auto !important; max-width: fit-content !important; }
+.box3 .mall_total_wrap { padding: 1em !important; flex-direction: row !important; align-items: center !important; justify-content: flex-start !important; flex-wrap: nowrap !important; gap: 0 !important; }
+.box3 .mall_total_wrap .tt_price { margin-right: 0.5em !important; }
+.box3 .mall_total_wrap .mark { display: inline !important; margin: 0 0.3em !important; }
+
+
 
 .proSort_wrap .proSort_in{flex-wrap:inherit; overflow:hidden; overflow-x:scroll}
 .proSort_wrap .proSort_in .con{padding:0; min-width:6.813em;}
@@ -603,6 +614,9 @@ flex-direction:column; border:1px solid #ddd; align-items:center; align-content:
 @media screen and (max-width:490px){
 .main_more.st1 .more_in{min-width:5.5em; text-align:center}
 .main_more.st1 .more_in .xi{display:none;}	
+
+.box3 .mall_total_wrap { padding: 1em !important; flex-direction: column !important; align-items: flex-start !important; justify-content: flex-start !important; text-align: left !important; gap: 0.3em !important; }
+.box3 .mall_total_wrap .mark { display: none !important; }
 
 }
 

@@ -69,6 +69,12 @@ table .label_select{ /*width:100%*/}
 .board_Event{margin:-3em 0 0 -1.5em;}
 .board_Event > li .in{margin:3em 0 0 1.5em;}
 
+.board_btn_wrap.orderMst1{display:none;}
+.board_btn_wrap.orderMst1 .label_st{display:flex; flex-wrap:wrap; align-items:center; align-content:center;}
+.board_btn_wrap.orderMst1 .label_st > span{flex:1; min-width:0; text-align:left !important; font-size:.938em; padding-left:1em;}
+
+.payment_btn {display: block; width: 100% !important;}
+
 
 }
 @media screen and (max-width:900px){
@@ -88,9 +94,6 @@ table .label_select{ /*width:100%*/}
 .tt_price.orderMstfont1{font-size:.813em;}
 .imgCon .wrap_con > p > span.t1.biGst.orderMstfont1{font-size:1em;}
 
-.board_btn_wrap.orderMst1{display:none;}
-.board_btn_wrap.orderMst1 .label_st{display:flex; flex-wrap:wrap; align-items:center; align-content:center;}
-.board_btn_wrap.orderMst1 .label_st > span{flex:1; min-width:0; text-align:left !important; font-size:.938em; padding-left:1em;}
 
 .board_st .bg1{background:#fafafa !important}
 
@@ -132,7 +135,8 @@ table .moHide{ display:none !important;}
 .board_st th,
 .board_st td{ padding:.5em .5em;}
 
-.board_st.list.tit{display:none;}
+/* .board_st.list.tit{display:none;} */
+.board_st.list.response thead { display:none !important; }
 .board_st.list.tit + .board_st.list{ border-top:4px solid #093291;}
 .board_st.list tr{ padding:.5em .5em; border-bottom:1px solid #ddd;}
 .board_st.list td{ border:none; padding:.25em 0; text-align:left; background:transparent !important;}
@@ -265,19 +269,29 @@ table.response.noTiceV.board_st.write td{background:#fff; padding:.75em 1em;}
 
 .mwd100{width:100% !important;}
 
+.tt_price .tw{margin: 0; vertical-align: middle;}
 
 .mCartst.flex_table > li > .tr{flex-wrap:wrap; padding:1em 0;}
-.mCartst.flex_table > li > .tr > .td.wCon{flex:auto; width:100%; border-bottom:2px dashed #dedede; padding-bottom:2em; margin-bottom:1em;}
-.mCartst.flex_table > li > .tr > .td.wCon .imgCon .wrap_img{width:8em; margin-right:1em;}
+/* .mCartst.flex_table > li > .tr > .td.wCon{flex:auto; width:100%; border-bottom:2px dashed #dedede; padding-bottom:2em; margin-bottom:1em;}
+.mCartst.flex_table > li > .tr > .td.wCon .imgCon .wrap_img{width:8em; margin-right:1em;} */
+.mCartst.flex_table > li > .tr > .td .imgCon{display:block; width: 100%;}
+.mCartst.flex_table > li > .tr > .td .imgCon .wrap_img{margin-right:0; width:inherit; padding-bottom:1em;}
 .mCartst.flex_table > li > .tr > .td.wVol{flex-direction:inherit; flex:100%; width:100%; max-width:100%;}
 .mCartst.flex_table > li > .tr > .td.wVol .tt_price{flex:1 1 33.33%; max-width:33.33%; text-align:left !important;}
 .mCartst.flex_table > li > .tr > .td.wVol2{flex:1 1 35%; max-width:35%; width:35%; order:4; align-items:inherit; align-content:inherit;}
 .mCartst.flex_table > li > .tr > .td.wPrice2{flex:100%; max-width:100%; width:100%; order:2;}
-.mCartst.flex_table > li > .tr > .td.wPrice2 > div{display:flex; width:100%; flex-wrap:wrap;}
-.mCartst.flex_table > li > .tr > .td.wPrice2 > div .tt_price{flex:1 1 33.33%; max-width:33.33%; text-align:left;}
+.mCartst.flex_table > li > .tr > .td.wPrice2 > div{display:flex; width:100%; flex-wrap:wrap; align-items: center;}
+.mCartst.flex_table > li > .tr > .td.wPrice2 > div .tt_price{/*flex:1 1 33.33%; max-width:33.33%; */text-align:left; flex:1}
 .mCartst.flex_table > li > .tr > .td.wBtn2{align-items:inherit; order:3; flex:1 1 65%; max-width:65%; width:65%; display:flex; flex-wrap:wrap; flex-direction:inherit; justify-content:inherit}
 .mCartst.flex_table > li > .tr > .td.wBtn2 > div.flex{justify-content:center;}
 
+
+.reviewSt.flex_table > li > .tr{display:block;}
+.reviewSt.flex_table > li > .tr > .td{align-items: flex-start;}
+.reviewSt.flex_table > li > .tr > .td .ac{text-align: left !important}
+.reviewSt.flex_table > li > .tr > .td .imgCon{display:block; width: 100%;}
+.reviewSt.flex_table > li > .tr > .td .imgCon .wrap_img{margin-right:0; width:inherit; padding-bottom:1em;}
+.reviewSt.flex_table > li > .tr > .td.wBtn{align-items:inherit}
 
 .board_Event{margin:-1em 0 0 -1em}
 .board_Event > li{width:50%}
@@ -301,10 +315,7 @@ table.response.noTiceV.board_st.write td{background:#fff; padding:.75em 1em;}
 }
 
 @media screen and (max-width:380px){
-.reviewSt.flex_table > li > .tr{display:block;}
-.reviewSt.flex_table > li > .tr > .td .imgCon{display:block;}
-.reviewSt.flex_table > li > .tr > .td .imgCon .wrap_img{margin-right:0; width:inherit; padding-bottom:1em;}
-.reviewSt.flex_table > li > .tr > .td.wBtn{align-items:inherit}
+
 .dp2_order .tt_price.orderMstfont1{text-align:left !important;}
 .dp2_order .flex_table > li > .tr > .td.wVol,
 .dp2_order .flex_table > li > .tr > .td.wPrice3,
